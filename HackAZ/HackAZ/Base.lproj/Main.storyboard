@@ -404,6 +404,9 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp4-C5-RZV">
                                 <rect key="frame" x="274" y="391" width="53" height="30"/>
                                 <state key="normal" title="Search!"/>
+                                <connections>
+                                    <action selector="searchButton:" destination="56R-Cd-Gdt" eventType="touchUpInside" id="y3h-nC-rrc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -437,6 +440,12 @@
                             <constraint firstItem="8pq-nE-fRV" firstAttribute="centerX" secondItem="xh0-4P-uue" secondAttribute="centerX" id="uts-fA-dEd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="courseInput" destination="lKZ-52-tUq" id="fxS-jK-vza"/>
+                        <outlet property="enrolledButton" destination="fJw-nq-8j8" id="NgZ-yc-Qvo"/>
+                        <outlet property="hwButton" destination="bdn-h1-R6F" id="R29-fz-q78"/>
+                        <outlet property="passedButton" destination="nMT-pE-e53" id="lpx-Al-Pf5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeA-ua-APq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,25 @@
 import UIKit
 
 class SearchVC: UIViewController {
-
+    
+    @IBOutlet weak var courseInput: UITextField!
+    
+    @IBOutlet weak var passedButton: DLRadioButton!
+    
+    @IBOutlet weak var enrolledButton: DLRadioButton!
+    
+    @IBOutlet weak var hwButton: DLRadioButton!
+    
+    @IBAction func searchButton(sender: AnyObject) {
+        if(hwbutton.selected) {
+            // Search within hwList
+        } else if(passedButton.selected) {
+            // Search within tutorList
+        } else if(enrolledButton.selected) {
+            // Search within buddyList
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
