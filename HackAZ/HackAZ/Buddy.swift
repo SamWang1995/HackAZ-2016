@@ -23,4 +23,3 @@ class Buddy{
         self.pic = pic
     }
 }
-//var currentList = Buddy(name: "", course: "", description: "")

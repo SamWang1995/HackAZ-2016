@@ -15,16 +15,6 @@ class TableViewController: UITableViewController {
     
     var buddySubmit: Buddy?
     
-//    var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
-//                     Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
-//    
-//    var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
-//                     Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
-//    
-//    var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
-//                     Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
-//                     Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
-    
     var currentList = [Buddy]()
     
     @IBOutlet weak var seggy: UISegmentedControl!
@@ -48,16 +38,16 @@ class TableViewController: UITableViewController {
         if(fromBuddy){
             buddyList.insert(buddySubmit!, atIndex: 0)
             currentList = buddyList
-            fromBuddy = false
+            fromBuddy   = false
             seggy.selectedSegmentIndex = 0
         }else if(fromTutor){
             tutorList.insert(buddySubmit!, atIndex: 0)
             currentList = tutorList
-            fromTutor = false
+            fromTutor   = false
             seggy.selectedSegmentIndex = 1
         } else if(fromHomework) {
             hwList.insert(buddySubmit!, atIndex: 0)
-            currentList = hwList
+            currentList  = hwList
             fromHomework = false
             seggy.selectedSegmentIndex = 2
         }
@@ -66,6 +56,7 @@ class TableViewController: UITableViewController {
     }
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -164,11 +155,11 @@ class TableViewController: UITableViewController {
 // List variables are global so that reloading the tabe view data does not wipe changes
 
 var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
-    Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
+                 Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
 
 var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
-    Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
+                 Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
 
 var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
-    Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
-    Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
+                 Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
+                 Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
