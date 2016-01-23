@@ -25,6 +25,11 @@ class SubmitVC: UIViewController {
         
         blurb.text = buddyBlurb
         
+        // Matches UITextView appearance to that of UITextField
+        content.layer.borderColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0).CGColor
+        content.layer.borderWidth = 1.0
+        content.layer.cornerRadius = 5
+        
         // Do any additional setup after loading the view.
     }
 
