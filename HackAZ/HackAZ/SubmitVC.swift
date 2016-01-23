@@ -16,6 +16,10 @@ class SubmitVC: UIViewController {
     
     @IBOutlet weak var blurb: UILabel!
 
+    @IBOutlet weak var course: UITextField!
+    
+    @IBOutlet weak var content: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +41,7 @@ class SubmitVC: UIViewController {
         }
 
     }
+    @IBOutlet weak var seggy: UISegmentedControl!
     
     @IBAction func submitPost(sender: AnyObject) {
         performSegueWithIdentifier("toMain", sender: self)
@@ -47,7 +52,22 @@ class SubmitVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toMain"){
+            let destVC = segue.destinationViewController as! TableViewController
+            if(seggy.selectedSegmentIndex == 0){
+                destVC.fromBuddy = true
+            }
+            else if(seggy.selectedSegmentIndex == 1){
+                destVC.fromTutor = true
+            }else{
+                destVC.fromHomework = true
+            }
+            
+            destVC.buddySubmit = [Buddy(name: "John Doe", course: course.text!, description: content.text!, pic: nil)]
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,6 +9,11 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    var fromBuddy = false
+    var fromTutor = false
+    var fromHomework = false
+    
+    var buddySubmit = [Buddy]()
     
     var buddyList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP", pic: nil), Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)] //[Buddy]()
     var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)] //[Buddy]()
@@ -17,7 +22,11 @@ class TableViewController: UITableViewController {
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
-            currentList = buddyList
+            if(fromBuddy){
+                currentList = buddySubmit+buddyList
+            }else{
+                currentList = buddyList
+            }
         case 1:
             currentList = tutorList
         case 2:
@@ -28,6 +37,16 @@ class TableViewController: UITableViewController {
         
         self.tableView.reloadData()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        if(fromBuddy){
+            currentList = buddySubmit+buddyList
+        }else{
+            currentList = buddyList
+        }
+        self.tableView.reloadData()
+    }
+    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
