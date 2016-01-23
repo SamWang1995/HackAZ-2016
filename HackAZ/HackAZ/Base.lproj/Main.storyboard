@@ -590,8 +590,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqV-Ki-ve2">
-                                <rect key="frame" x="281" y="550" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="278" y="550" width="53" height="30"/>
+                                <state key="normal" title="Submit!"/>
                                 <connections>
                                     <action selector="testSubmit:" destination="IyP-ve-3Zu" eventType="touchUpInside" id="bel-a0-UnI"/>
                                 </connections>
