@@ -62,16 +62,20 @@ class SubmitVC: UIViewController {
             let destVC = segue.destinationViewController as! TableViewController
             if(seggy.selectedSegmentIndex == 0){
                 destVC.fromBuddy = true
-            }
-            else if(seggy.selectedSegmentIndex == 1){
+            } else if(seggy.selectedSegmentIndex == 1){
                 destVC.fromTutor = true
-            }else{
+            } else{
                 destVC.fromHomework = true
             }
             
             destVC.buddySubmit = Buddy(name: "John Doe", course: course.text!, description: content.text!, pic: nil)
         }
     }
+    
+    @IBAction func testSubmit(sender: AnyObject) {
+        performSegueWithIdentifier("toMain", sender: self)
+    }
+    
     
     /*
     // MARK: - Navigation

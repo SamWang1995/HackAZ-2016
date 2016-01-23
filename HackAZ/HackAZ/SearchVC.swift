@@ -21,6 +21,7 @@ class SearchVC: UIViewController {
     @IBOutlet weak var hwButton: DLRadioButton!
     
     @IBAction func searchButton(sender: AnyObject) {
+        resultList = [Buddy]()
         if(hwButton.selected) {
             // Search within hwList
             for peer in hwList {
@@ -43,6 +44,8 @@ class SearchVC: UIViewController {
                 }
             }
         }
+        
+        performSegueWithIdentifier("toResults", sender: self)
     }
     
     override func viewDidLoad() {
@@ -58,6 +61,13 @@ class SearchVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "toResults"){
+            let destVC = segue.destinationViewController as! UITableViewController as! ResultTVC
+            
+            destVC.currentList = resultList
+        }
+    }
 
     /*
     // MARK: - Navigation

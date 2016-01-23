@@ -20,6 +20,7 @@
 		5021EF721C53720200EB03D9 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF711C53720200EB03D9 /* Buddy.swift */; };
 		506BB19B1C53FD7E00CF4B5F /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BB19A1C53FD7E00CF4B5F /* DLRadioButton.m */; };
 		506BB19F1C54136600CF4B5F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BB19E1C54136600CF4B5F /* SearchVC.swift */; };
+		506BB1A31C541B1E00CF4B5F /* ResultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */; };
 		50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C918C21C53BD30003D15B7 /* SubmitVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		506BB1991C53FD7E00CF4B5F /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = HackAZ/DLRadioButton.h; sourceTree = "<group>"; };
 		506BB19A1C53FD7E00CF4B5F /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = HackAZ/DLRadioButton.m; sourceTree = "<group>"; };
 		506BB19E1C54136600CF4B5F /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTVC.swift; sourceTree = "<group>"; };
 		50C918C21C53BD30003D15B7 /* SubmitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,14 +119,15 @@
 			isa = PBXGroup;
 			children = (
 				229016D41C532F19000D8DD4 /* AppDelegate.swift */,
+				5021EF711C53720200EB03D9 /* Buddy.swift */,
 				22E7503D1C538E7E00F8B545 /* MainCell.swift */,
 				229016D61C532F19000D8DD4 /* ViewController.swift */,
 				229016D81C532F19000D8DD4 /* Main.storyboard */,
+				506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */,
 				506BB19E1C54136600CF4B5F /* SearchVC.swift */,
+				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
 				50C918C21C53BD30003D15B7 /* SubmitVC.swift */,
 				22E750381C536BD100F8B545 /* TableViewController.swift */,
-				5021EF711C53720200EB03D9 /* Buddy.swift */,
-				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
 				229016DB1C532F19000D8DD4 /* Assets.xcassets */,
 				229016DD1C532F19000D8DD4 /* LaunchScreen.storyboard */,
 				229016E01C532F19000D8DD4 /* Info.plist */,
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506BB1A31C541B1E00CF4B5F /* ResultTVC.swift in Sources */,
 				50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */,
 				229016D71C532F19000D8DD4 /* ViewController.swift in Sources */,
 				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
