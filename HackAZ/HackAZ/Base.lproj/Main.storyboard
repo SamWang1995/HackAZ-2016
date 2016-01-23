@@ -178,7 +178,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="257" id="fmv-f4-gIK" customClass="MainCell" customModule="HackAZ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="257"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="257"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmv-f4-gIK" id="CCj-oZ-YGI">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="256.5"/>
@@ -265,6 +265,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="seggy" destination="ZOg-P0-LsC" id="lLT-3l-xkf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moB-7X-GKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,7 +331,7 @@
                                     <action selector="submitPost:" destination="IyP-ve-3Zu" eventType="touchUpInside" id="wyN-IG-bK7"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-mW-m6O">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PFp-mW-m6O" userLabel="Seggy">
                                 <rect key="frame" x="172" y="150" width="256" height="29"/>
                                 <segments>
                                     <segment title="Buddy"/>
@@ -418,6 +421,6 @@
         <image name="venditeelogocircle" width="312" height="312"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iSv-9H-GHy"/>
+        <segue reference="BLy-ch-iqv"/>
     </inferredMetricsTieBreakers>
 </document>

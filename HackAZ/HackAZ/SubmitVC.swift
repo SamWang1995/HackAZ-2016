@@ -64,7 +64,7 @@ class SubmitVC: UIViewController {
                 destVC.fromHomework = true
             }
             
-            destVC.buddySubmit = [Buddy(name: "John Doe", course: course.text!, description: content.text!, pic: nil)]
+            destVC.buddySubmit = Buddy(name: "John Doe", course: course.text!, description: content.text!, pic: nil)
         }
     }
     
