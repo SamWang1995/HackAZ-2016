@@ -18,6 +18,7 @@
 		22E7503E1C538E7E00F8B545 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7503D1C538E7E00F8B545 /* MainCell.swift */; };
 		5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */; };
 		5021EF721C53720200EB03D9 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF711C53720200EB03D9 /* Buddy.swift */; };
+		50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C918C21C53BD30003D15B7 /* SubmitVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		22E7503D1C538E7E00F8B545 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5021EF711C53720200EB03D9 /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
+		50C918C21C53BD30003D15B7 /* SubmitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				22E7503D1C538E7E00F8B545 /* MainCell.swift */,
 				229016D61C532F19000D8DD4 /* ViewController.swift */,
 				229016D81C532F19000D8DD4 /* Main.storyboard */,
+				50C918C21C53BD30003D15B7 /* SubmitVC.swift */,
 				22E750381C536BD100F8B545 /* TableViewController.swift */,
 				5021EF711C53720200EB03D9 /* Buddy.swift */,
 				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */,
 				229016D71C532F19000D8DD4 /* ViewController.swift in Sources */,
 				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
 				22E7503E1C538E7E00F8B545 /* MainCell.swift in Sources */,
