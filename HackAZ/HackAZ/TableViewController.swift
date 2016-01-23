@@ -19,6 +19,10 @@ class TableViewController: UITableViewController {
     
     @IBOutlet weak var seggy: UISegmentedControl!
     
+    @IBAction func searchButton(sender: AnyObject) {
+        performSegueWithIdentifier("toSearch", sender: self)
+    }
+    
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
