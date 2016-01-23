@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         performSegueWithIdentifier("toSignUp", sender: self)
     }
     
+    @IBOutlet weak var Logo: UIImageView!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
