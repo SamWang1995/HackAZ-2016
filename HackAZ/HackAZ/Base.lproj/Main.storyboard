@@ -191,7 +191,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="257" id="fmv-f4-gIK" customClass="MainCell" customModule="HackAZ" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="257"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="257"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fmv-f4-gIK" id="CCj-oZ-YGI">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="256.5"/>
@@ -405,8 +405,7 @@
                                 <rect key="frame" x="274" y="391" width="53" height="30"/>
                                 <state key="normal" title="Search!"/>
                                 <connections>
-                                    <action selector="searchButton:" destination="56R-Cd-Gdt" eventType="touchUpInside" id="y3h-nC-rrc"/>
-                                    <segue destination="4tM-gO-2Wd" kind="show" identifier="toResults" id="HRT-bE-OKW"/>
+                                    <action selector="searchButton:" destination="56R-Cd-Gdt" eventType="touchUpInside" id="2Fa-et-NYu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -446,6 +445,7 @@
                         <outlet property="enrolledButton" destination="fJw-nq-8j8" id="NgZ-yc-Qvo"/>
                         <outlet property="hwButton" destination="bdn-h1-R6F" id="R29-fz-q78"/>
                         <outlet property="passedButton" destination="nMT-pE-e53" id="lpx-Al-Pf5"/>
+                        <segue destination="4tM-gO-2Wd" kind="show" identifier="toResults" id="Axq-6g-3Cg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeA-ua-APq" userLabel="First Responder" sceneMemberID="firstResponder"/>
