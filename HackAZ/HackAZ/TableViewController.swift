@@ -15,7 +15,6 @@ class TableViewController: UITableViewController {
     var buddyList = [Buddy]()
     var tutorList = [Buddy]()
     var hwList    = [Buddy]()
-    var currentSegment = "Buddy"
     var currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
     
     @IBAction func segmentedControl(sender: UISegmentedControl) {
@@ -23,18 +22,16 @@ class TableViewController: UITableViewController {
             // Buddy
             //self.tableView.clear()
             currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
-            //self.tableView.reloadData()
+            self.tableView.reloadData()
             
         } else if(sender.selectedSegmentIndex == 1) {
             // Tutor
             currentList = [Buddy(name: "Bill", course: "CSE 120 Digital Design", description: "Will halp for food"), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food")]
-            currentSegment = "Tutor"
-            //self.tableView.reloadData()
+            self.tableView.reloadData()
         } else {
             // Homework
-            currentSegment = "HW"
             currentList = [Buddy(name: "Sue", course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!"), Buddy(name: "Joe", course: "MAT 371", description: "I can't prove continuity! Wahhhhh!"), Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...")]
-           // self.tableView.reloadData()
+            self.tableView.reloadData()
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -42,8 +39,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
-        //tutorList = [Buddy(name: "Bill", course: "CSE 120 Digital Design", description: "Will halp for food"), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food")]
-        //hwList    = [Buddy(name: "Sue", course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!"), Buddy(name: "Joe", course: "MAT 371", description: "I can't prove continuity! Wahhhhh!"), Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...")]
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -67,7 +63,7 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return buddyList.count
+        return currentList.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
