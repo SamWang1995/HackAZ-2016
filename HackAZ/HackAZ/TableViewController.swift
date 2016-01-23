@@ -13,22 +13,22 @@ class TableViewController: UITableViewController {
     var buddyList = [Buddy]()
     var tutorList = [Buddy]()
     var hwList    = [Buddy]()
-    var currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+    var currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP", pic: nil), Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
     
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0) {
             // Buddy
             //self.tableView.clear()
-            currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+            currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP", pic: nil), Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
             self.tableView.reloadData()
             
         } else if(sender.selectedSegmentIndex == 1) {
             // Tutor
-            currentList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food"), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food")]
+            currentList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
             self.tableView.reloadData()
         } else {
             // Homework
-            currentList = [Buddy(name: "Sue", course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!"), Buddy(name: "Joe", course: "MAT 371", description: "I can't prove continuity! Wahhhhh!"), Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...")]
+            currentList = [Buddy(name: "Sue", course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!", pic: nil), Buddy(name: "Joe", course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil), Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...", pic: nil)]
             self.tableView.reloadData()
         }
     }
@@ -36,7 +36,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+        currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP", pic: nil), Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
         
         
         // Uncomment the following line to preserve selection between presentations

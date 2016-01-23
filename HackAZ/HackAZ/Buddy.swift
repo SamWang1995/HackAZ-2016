@@ -7,17 +7,20 @@
 //
 
 import Foundation
+import UIKit
 
 class Buddy{
     
     var name: String
     var course: String
     var description: String
+    var pic: UIImage?
     
-    init(name: String, course: String, description: String){
+    init(name: String, course: String, description: String, pic: UIImage?){
         self.name = name
         self.course = course
         self.description = description
+        self.pic = pic
     }
 }
 //var currentList = Buddy(name: "", course: "", description: "")
