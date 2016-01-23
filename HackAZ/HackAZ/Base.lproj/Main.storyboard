@@ -294,10 +294,10 @@
             </objects>
             <point key="canvasLocation" x="2452" y="362"/>
         </scene>
-        <!--View Controller-->
+        <!--SearchVC-->
         <scene sceneID="trp-Wk-orm">
             <objects>
-                <viewController id="56R-Cd-Gdt" sceneMemberID="viewController">
+                <viewController id="56R-Cd-Gdt" customClass="SearchVC" customModule="HackAZ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xaY-gb-ZJW"/>
                         <viewControllerLayoutGuide type="bottom" id="0IB-ve-PLQ"/>
@@ -401,6 +401,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qp4-C5-RZV">
+                                <rect key="frame" x="274" y="391" width="53" height="30"/>
+                                <state key="normal" title="Search!"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -408,8 +412,10 @@
                             <constraint firstItem="bdn-h1-R6F" firstAttribute="centerX" secondItem="fJw-nq-8j8" secondAttribute="centerX" id="8Cs-xo-CCK"/>
                             <constraint firstItem="phv-OA-q0G" firstAttribute="centerX" secondItem="75q-Zq-rEf" secondAttribute="centerX" id="CrC-0u-Kw0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8pq-nE-fRV" secondAttribute="trailing" constant="10" id="EbT-dw-6E5"/>
+                            <constraint firstItem="Qp4-C5-RZV" firstAttribute="top" secondItem="rCf-pl-Ugn" secondAttribute="bottom" constant="40" id="IRN-uo-ydp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="phv-OA-q0G" secondAttribute="trailing" constant="10" id="Msa-GJ-JAm"/>
                             <constraint firstItem="rCf-pl-Ugn" firstAttribute="leading" secondItem="OL2-H2-M4h" secondAttribute="leadingMargin" constant="10" id="NFy-sX-jWU"/>
+                            <constraint firstItem="Qp4-C5-RZV" firstAttribute="centerX" secondItem="OL2-H2-M4h" secondAttribute="centerX" id="Obm-P4-iOB"/>
                             <constraint firstItem="m8j-pX-hpT" firstAttribute="leading" secondItem="OL2-H2-M4h" secondAttribute="leadingMargin" constant="10" id="PW4-sY-l0X"/>
                             <constraint firstItem="xh0-4P-uue" firstAttribute="centerX" secondItem="phv-OA-q0G" secondAttribute="centerX" id="RNU-S8-84l"/>
                             <constraint firstItem="jGU-wQ-Eqj" firstAttribute="leading" secondItem="OL2-H2-M4h" secondAttribute="leadingMargin" constant="10" id="UlL-F1-d93"/>
