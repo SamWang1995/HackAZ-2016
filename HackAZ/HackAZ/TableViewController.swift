@@ -14,23 +14,29 @@ class TableViewController: UITableViewController {
     
     var buddy = [Buddy]()
     
+    
+    
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0) {
             // Buddy
-            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+            
             
         } else if(sender.selectedSegmentIndex == 1) {
             // Tutor
-            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+            
         } else {
             // Homework
-            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+            
         }
     }
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        buddy = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP")]
+        
+        print(buddy.description)
+        print(buddy)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -59,7 +65,7 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-     cell.textLabel?.text = buddy[indexPath.section]
+        cell.textLabel?.text = buddy.description
         return cell
     }
     /*

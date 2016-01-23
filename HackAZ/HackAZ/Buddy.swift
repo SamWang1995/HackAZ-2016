@@ -10,9 +10,9 @@ import Foundation
 
 class Buddy{
     
-    var name = ""
-    var course = ""
-    var description = ""
+    var name: String
+    var course: String
+    var description: String
     
     init(name: String, course: String, description: String){
         self.name = name
@@ -21,4 +21,3 @@ class Buddy{
     }
  
 }
-var buddy = Buddy(name: "", course: "", description: "")
