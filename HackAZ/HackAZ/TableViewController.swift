@@ -13,18 +13,18 @@ class TableViewController: UITableViewController {
     var buddyList = [Buddy]()
     var tutorList = [Buddy]()
     var hwList    = [Buddy]()
-    var currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+    var currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
     
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         if(sender.selectedSegmentIndex == 0) {
             // Buddy
             //self.tableView.clear()
-            currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+            currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
             self.tableView.reloadData()
             
         } else if(sender.selectedSegmentIndex == 1) {
             // Tutor
-            currentList = [Buddy(name: "Bill", course: "CSE 120 Digital Design", description: "Will halp for food"), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food")]
+            currentList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food"), Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food")]
             self.tableView.reloadData()
         } else {
             // Homework
@@ -36,7 +36,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currentList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
+        currentList = [Buddy(name: "Bob", course: "CSE 120", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
         
         
         // Uncomment the following line to preserve selection between presentations
