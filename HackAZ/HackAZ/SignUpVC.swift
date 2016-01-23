@@ -29,6 +29,7 @@ class SignUpVC: UIViewController {
         // Hash/store user/pass
         
         // Segue to main view
+        performSegueWithIdentifier("toMain", sender: self)
     }
 
     /*
