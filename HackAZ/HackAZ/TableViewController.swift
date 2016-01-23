@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     
     
-    //var buddyList = [Buddy]()
+    var buddyList = [Buddy]()
     
     
     
@@ -33,7 +33,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //buddyList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP")]
+        buddyList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
         
         //print(buddyList.description)
         //print(buddyList)
@@ -59,13 +59,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return buddyList.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "Hello"
+        cell.textLabel?.text = buddyList[indexPath.item].name
         return cell
     }
     /*
