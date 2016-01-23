@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension String {
+    func replace(string:String, replacement:String) -> String {
+        return self.stringByReplacingOccurrencesOfString(string, withString: replacement, options: NSStringCompareOptions.LiteralSearch, range: nil)
+    }
+    
+    func removeWhitespace() -> String {
+        return self.replace(" ", replacement: "")
+    }
+}
+
 class SearchVC: UIViewController {
     
     var resultList = [Buddy]()
@@ -25,21 +35,21 @@ class SearchVC: UIViewController {
         if(hwButton.selected) {
             // Search within hwList
             for peer in hwList {
-                if(peer.course == courseInput.text) {
+                if(peer.course.uppercaseString.removeWhitespace() == courseInput.text?.uppercaseString.removeWhitespace()) {
                     resultList.append(peer)
                 }
             }
         } else if(passedButton.selected) {
             // Search within tutorList
             for peer in tutorList {
-                if(peer.course == courseInput.text) {
+                if(peer.course.uppercaseString.removeWhitespace() == courseInput.text?.uppercaseString.removeWhitespace()) {
                     resultList.append(peer)
                 }
             }
         } else if(enrolledButton.selected) {
             // Search within buddyList
             for peer in buddyList {
-                if(peer.course == courseInput.text) {
+                if(peer.course.uppercaseString.removeWhitespace() == courseInput.text?.uppercaseString.removeWhitespace()) {
                     resultList.append(peer)
                 }
             }
