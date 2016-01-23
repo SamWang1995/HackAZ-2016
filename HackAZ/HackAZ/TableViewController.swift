@@ -35,8 +35,6 @@ class TableViewController: UITableViewController {
         
         buddyList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bill", course: "CSE 230", description: "HALP")]
         
-        //print(buddyList.description)
-        //print(buddyList)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
