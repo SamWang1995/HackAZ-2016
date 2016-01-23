@@ -22,6 +22,7 @@
 		506BB19F1C54136600CF4B5F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BB19E1C54136600CF4B5F /* SearchVC.swift */; };
 		506BB1A31C541B1E00CF4B5F /* ResultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */; };
 		50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C918C21C53BD30003D15B7 /* SubmitVC.swift */; };
+		50D9331E1C543161000B0A65 /* CommentTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9331D1C543161000B0A65 /* CommentTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		506BB19E1C54136600CF4B5F /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTVC.swift; sourceTree = "<group>"; };
 		50C918C21C53BD30003D15B7 /* SubmitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitVC.swift; sourceTree = "<group>"; };
+		50D9331D1C543161000B0A65 /* CommentTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				22E7503D1C538E7E00F8B545 /* MainCell.swift */,
 				229016D61C532F19000D8DD4 /* ViewController.swift */,
 				229016D81C532F19000D8DD4 /* Main.storyboard */,
+				50D9331D1C543161000B0A65 /* CommentTVC.swift */,
 				506BB1A21C541B1E00CF4B5F /* ResultTVC.swift */,
 				506BB19E1C54136600CF4B5F /* SearchVC.swift */,
 				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
@@ -290,6 +293,7 @@
 				506BB1A31C541B1E00CF4B5F /* ResultTVC.swift in Sources */,
 				50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */,
 				229016D71C532F19000D8DD4 /* ViewController.swift in Sources */,
+				50D9331E1C543161000B0A65 /* CommentTVC.swift in Sources */,
 				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
 				506BB19F1C54136600CF4B5F /* SearchVC.swift in Sources */,
 				22E7503E1C538E7E00F8B545 /* MainCell.swift in Sources */,

@@ -23,6 +23,11 @@ class TableViewController: UITableViewController {
         performSegueWithIdentifier("toSearch", sender: self)
     }
     
+    @IBAction func commentButton(sender: AnyObject) {
+        performSegueWithIdentifier("toComments", sender: self)
+    }
+    
+    
     @IBAction func segmentedControl(sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
         case 0:
@@ -158,12 +163,12 @@ class TableViewController: UITableViewController {
 
 // List variables are global so that reloading the tabe view data does not wipe changes
 
-var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
-                 Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
+var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "Hi, I need some help with Baumann's Digital Design class. I was pretty good up until Mealy Models (Moore Models were sooo easy) but now I'm completely lost. I think I need someone to help me get back up to speed and stay there. Is anybody else in her class looking for a study buddy?", pic: nil),
+                 Buddy(name: "Sue", course: "CSE 230", description: "I'm FREAKING OUT about Burger's test on Thursday. I've been putting off studying for way too long. I'm really used to having a lot of friends in my classes to study with me, but on my own I don't seem to get much done. Doen anyone else feel this way? Maybe we could study for this test and the final together?", pic: nil)]
 
-var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
-                 Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
+var tutorList = [Buddy(name: "Karen", course: "MAT 371", description: "Hey, has anyone on here taken Advanced Calc with Professor Kuiper? My whole class is pretty stuck on the whole uniform continuity thing. I asked pretty much everyone else already, so now I have to turn to you guys who've already taken it. Is anyone up to meet me in the library and walk me through from regular continuity to uniform continuity? I'll bring the coffee! Thanks!", pic: nil),
+                 Buddy(name: "David", course: "CSE 110", description: "I think I'm in the wrong major. I thought I liked computers but I just can't get the hang of programming. I'm worried I'll fail my class if I don;t get it together soon. I'm too nervous to ask the people in my class because they all seem so far ahead of me. Obviously, you all will be too, but you at least had a head start. Tons of these people were just like me before this class. Please, help me get through my first (and last) programming class.", pic: nil)]
 
-var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
-                 Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
-                 Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
+var hwList    = [Buddy(name: "Michael", course: "IEE 380", description: "I just wanted to check something real quick with anyone who's in or has taken Stats with Chattin. Did the solutions given for the homework match your problems, or were they the solutions to the examples in the textbook? Mine seem to be the latter, and Chattin hasn't emailed me back yet. Thanks in advance!",   pic: nil),
+                 Buddy(name: "Alex",     course: "MAT 416", description: "Hey, for the first problem for Kierstead's class, did you guys use a proof by contradiction using the complement of the graph? That seems to work but it feels a little clumsy to me and I'm sure someone has a better way. Let me know, thanks!", pic: nil),
+                 Buddy(name: "Steven",  course: "MAT 342", description: "Webwork sux...", pic: nil)]
