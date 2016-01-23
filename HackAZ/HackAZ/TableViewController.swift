@@ -65,9 +65,11 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MainCell
         //cell.textLabel?.text = currentList[indexPath.item].name
-        
+        cell.name.text    = currentList[indexPath.item].name
+        cell.course.text  = currentList[indexPath.item].course
+        //cell.content.text = "hey"//currentList[indexPath.item].description
         return cell
     }
     /*
