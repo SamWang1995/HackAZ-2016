@@ -10,6 +10,8 @@ import UIKit
 
 class SearchVC: UIViewController {
     
+    var resultList = [Buddy]()
+    
     @IBOutlet weak var courseInput: UITextField!
     
     @IBOutlet weak var passedButton: DLRadioButton!
@@ -19,17 +21,34 @@ class SearchVC: UIViewController {
     @IBOutlet weak var hwButton: DLRadioButton!
     
     @IBAction func searchButton(sender: AnyObject) {
-        if(hwbutton.selected) {
+        if(hwButton.selected) {
             // Search within hwList
+            for peer in hwList {
+                if(peer.course == courseInput.text) {
+                    resultList.append(peer)
+                }
+            }
         } else if(passedButton.selected) {
             // Search within tutorList
+            for peer in tutorList {
+                if(peer.course == courseInput.text) {
+                    resultList.append(peer)
+                }
+            }
         } else if(enrolledButton.selected) {
             // Search within buddyList
+            for peer in buddyList {
+                if(peer.course == courseInput.text) {
+                    resultList.append(peer)
+                }
+            }
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultList.removeAll()
 
         // Do any additional setup after loading the view.
     }
