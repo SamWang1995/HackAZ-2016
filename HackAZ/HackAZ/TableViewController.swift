@@ -10,8 +10,6 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    
-    
     var buddyList = [Buddy]()
     var tutorList = [Buddy]()
     var hwList    = [Buddy]()
@@ -68,7 +66,8 @@ class TableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-            cell.textLabel?.text = currentList[indexPath.item].name
+        //cell.textLabel?.text = currentList[indexPath.item].name
+        
         return cell
     }
     /*
