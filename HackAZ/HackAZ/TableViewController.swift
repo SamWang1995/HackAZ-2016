@@ -15,15 +15,15 @@ class TableViewController: UITableViewController {
     
     var buddySubmit: Buddy?
     
-    var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
-                     Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
-    
-    var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
-                     Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
-    
-    var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
-                     Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
-                     Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
+//    var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
+//                     Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
+//    
+//    var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
+//                     Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
+//    
+//    var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
+//                     Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
+//                     Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
     
     var currentList = [Buddy]()
     
@@ -160,3 +160,15 @@ class TableViewController: UITableViewController {
     */
 
 }
+
+// List variables are global so that reloading the tabe view data does not wipe changes
+
+var buddyList = [Buddy(name: "Bob",  course: "CSE 120", description: "HALP", pic: nil),
+    Buddy(name: "Bill", course: "CSE 230", description: "HALP", pic: nil)]
+
+var tutorList = [Buddy(name: "Bill", course: "CSE 120", description: "Will halp for food", pic: nil),
+    Buddy(name: "Bill", course: "CSE 110", description: "Will halp for food", pic: nil)]
+
+var hwList    = [Buddy(name: "Sue",    course: "CSE 240", description: "Pls help this is due NOWWWWWWWW!",   pic: nil),
+    Buddy(name: "Joe",    course: "MAT 371", description: "I can't prove continuity! Wahhhhh!", pic: nil),
+    Buddy(name: "Steven", course: "MAT 343", description: "Webwork sux...",                     pic: nil)]
