@@ -19,5 +19,5 @@ class Buddy{
         self.course = course
         self.description = description
     }
- 
 }
+//var currentList = Buddy(name: "", course: "", description: "")
