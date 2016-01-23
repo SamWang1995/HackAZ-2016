@@ -364,18 +364,27 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMT-pE-e53" customClass="DLRadioButton">
                                 <rect key="frame" x="308" y="190" width="58" height="30"/>
+                                <connections>
+                                    <outletCollection property="otherButtons" destination="phv-OA-q0G" id="qPR-ne-8wE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phv-OA-q0G" customClass="DLRadioButton">
                                 <rect key="frame" x="368" y="190" width="58" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJw-nq-8j8" customClass="DLRadioButton">
                                 <rect key="frame" x="308" y="250" width="58" height="30"/>
+                                <connections>
+                                    <outletCollection property="otherButtons" destination="xh0-4P-uue" id="uzr-eG-7qP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh0-4P-uue" customClass="DLRadioButton">
                                 <rect key="frame" x="368" y="250" width="58" height="30"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdn-h1-R6F" customClass="DLRadioButton">
                                 <rect key="frame" x="308" y="310" width="58" height="30"/>
+                                <connections>
+                                    <outletCollection property="otherButtons" destination="8pq-nE-fRV" id="w6c-5W-LOl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pq-nE-fRV" customClass="DLRadioButton">
                                 <rect key="frame" x="368" y="310" width="58" height="30"/>
