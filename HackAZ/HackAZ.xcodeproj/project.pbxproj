@@ -16,6 +16,7 @@
 		229016F51C532F19000D8DD4 /* HackAZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229016F41C532F19000D8DD4 /* HackAZUITests.swift */; };
 		22E750391C536BD100F8B545 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E750381C536BD100F8B545 /* TableViewController.swift */; };
 		5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */; };
+		5021EF721C53720200EB03D9 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF711C53720200EB03D9 /* Buddy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		229016F61C532F1A000D8DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E750381C536BD100F8B545 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		5021EF711C53720200EB03D9 /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				229016D61C532F19000D8DD4 /* ViewController.swift */,
 				229016D81C532F19000D8DD4 /* Main.storyboard */,
 				22E750381C536BD100F8B545 /* TableViewController.swift */,
+				5021EF711C53720200EB03D9 /* Buddy.swift */,
 				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
 				229016DB1C532F19000D8DD4 /* Assets.xcassets */,
 				229016DD1C532F19000D8DD4 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				229016D71C532F19000D8DD4 /* ViewController.swift in Sources */,
 				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
+				5021EF721C53720200EB03D9 /* Buddy.swift in Sources */,
 				229016D51C532F19000D8DD4 /* AppDelegate.swift in Sources */,
 				22E750391C536BD100F8B545 /* TableViewController.swift in Sources */,
 			);
