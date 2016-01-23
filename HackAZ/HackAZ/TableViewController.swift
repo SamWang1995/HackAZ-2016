@@ -11,12 +11,25 @@ import UIKit
 class TableViewController: UITableViewController {
     
     
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
+    var buddy = [Buddy]()
+    
+    @IBAction func segmentedControl(sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0) {
+            // Buddy
+            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+            
+        } else if(sender.selectedSegmentIndex == 1) {
+            // Tutor
+            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+        } else {
+            // Homework
+            buddy.append(Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"))
+        }
+    }
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        segmentedControl.addTarget(self, action: "changedValue", forControlEvents: UIControlEvents.ValueChanged)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,9 +38,6 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    func changedValue(){
-        
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

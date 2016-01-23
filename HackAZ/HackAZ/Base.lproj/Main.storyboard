@@ -195,16 +195,15 @@
                             <rect key="frame" x="178.5" y="7" width="243" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
-                                <segment title="Third"/>
-                                <segment title="Fourth"/>
+                                <segment title="Buddy"/>
+                                <segment title="Tutor"/>
+                                <segment title="Homework"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentedControl:" destination="a0k-AX-f4J" eventType="valueChanged" id="dGN-JW-tFb"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
-                    <connections>
-                        <outlet property="segmentedControl" destination="ZOg-P0-LsC" id="dVa-7Z-65n"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moB-7X-GKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
