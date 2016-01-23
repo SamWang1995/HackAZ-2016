@@ -12,7 +12,7 @@ class TableViewController: UITableViewController {
     
     
     
-    var buddy = [Buddy]()
+    //var buddyList = [Buddy]()
     
     
     
@@ -33,10 +33,10 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        buddy = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP")]
+        //buddyList = [Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP"), Buddy(name: "Bob", course: "CSE 120 Digital Design", description: "HALP")]
         
-        print(buddy.description)
-        print(buddy)
+        //print(buddyList.description)
+        //print(buddyList)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -59,13 +59,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return buddy.count
+        return 1
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = buddy.description
+        cell.textLabel?.text = "Hello"
         return cell
     }
     /*
