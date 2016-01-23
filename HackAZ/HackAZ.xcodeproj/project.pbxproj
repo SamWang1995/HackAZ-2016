@@ -14,6 +14,7 @@
 		229016DF1C532F19000D8DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229016DD1C532F19000D8DD4 /* LaunchScreen.storyboard */; };
 		229016EA1C532F19000D8DD4 /* HackAZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229016E91C532F19000D8DD4 /* HackAZTests.swift */; };
 		229016F51C532F19000D8DD4 /* HackAZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229016F41C532F19000D8DD4 /* HackAZUITests.swift */; };
+		5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		229016F01C532F19000D8DD4 /* HackAZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackAZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		229016F41C532F19000D8DD4 /* HackAZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackAZUITests.swift; sourceTree = "<group>"; };
 		229016F61C532F1A000D8DD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				229016D41C532F19000D8DD4 /* AppDelegate.swift */,
 				229016D61C532F19000D8DD4 /* ViewController.swift */,
 				229016D81C532F19000D8DD4 /* Main.storyboard */,
+				5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */,
 				229016DB1C532F19000D8DD4 /* Assets.xcassets */,
 				229016DD1C532F19000D8DD4 /* LaunchScreen.storyboard */,
 				229016E01C532F19000D8DD4 /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				229016D71C532F19000D8DD4 /* ViewController.swift in Sources */,
+				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
 				229016D51C532F19000D8DD4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				229016FB1C532F1A000D8DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229016FC1C532F1A000D8DD4 /* Build configuration list for PBXNativeTarget "HackAZTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				229016FE1C532F1A000D8DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229016FF1C532F1A000D8DD4 /* Build configuration list for PBXNativeTarget "HackAZUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				229017011C532F1A000D8DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
