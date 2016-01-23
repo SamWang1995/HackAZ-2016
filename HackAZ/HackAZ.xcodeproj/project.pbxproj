@@ -18,6 +18,7 @@
 		22E7503E1C538E7E00F8B545 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E7503D1C538E7E00F8B545 /* MainCell.swift */; };
 		5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */; };
 		5021EF721C53720200EB03D9 /* Buddy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021EF711C53720200EB03D9 /* Buddy.swift */; };
+		506BB19B1C53FD7E00CF4B5F /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 506BB19A1C53FD7E00CF4B5F /* DLRadioButton.m */; };
 		50C918C31C53BD30003D15B7 /* SubmitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C918C21C53BD30003D15B7 /* SubmitVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,9 @@
 		22E7503D1C538E7E00F8B545 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		5021EF6F1C5364C000EB03D9 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5021EF711C53720200EB03D9 /* Buddy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buddy.swift; sourceTree = "<group>"; };
+		506BB1981C53FD7D00CF4B5F /* HackAZ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackAZ-Bridging-Header.h"; sourceTree = "<group>"; };
+		506BB1991C53FD7E00CF4B5F /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = HackAZ/DLRadioButton.h; sourceTree = "<group>"; };
+		506BB19A1C53FD7E00CF4B5F /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = HackAZ/DLRadioButton.m; sourceTree = "<group>"; };
 		50C918C21C53BD30003D15B7 /* SubmitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,10 +91,13 @@
 		229016C81C532F19000D8DD4 = {
 			isa = PBXGroup;
 			children = (
+				506BB1991C53FD7E00CF4B5F /* DLRadioButton.h */,
+				506BB19A1C53FD7E00CF4B5F /* DLRadioButton.m */,
 				229016D31C532F19000D8DD4 /* HackAZ */,
 				229016E81C532F19000D8DD4 /* HackAZTests */,
 				229016F31C532F19000D8DD4 /* HackAZUITests */,
 				229016D21C532F19000D8DD4 /* Products */,
+				506BB1981C53FD7D00CF4B5F /* HackAZ-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,7 +209,7 @@
 		229016C91C532F19000D8DD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Samuel Wang";
 				TargetAttributes = {
@@ -279,6 +286,7 @@
 				5021EF701C5364C000EB03D9 /* SignUpVC.swift in Sources */,
 				22E7503E1C538E7E00F8B545 /* MainCell.swift in Sources */,
 				5021EF721C53720200EB03D9 /* Buddy.swift in Sources */,
+				506BB19B1C53FD7E00CF4B5F /* DLRadioButton.m in Sources */,
 				229016D51C532F19000D8DD4 /* AppDelegate.swift in Sources */,
 				22E750391C536BD100F8B545 /* TableViewController.swift in Sources */,
 			);
@@ -420,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackAZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HackAZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackAZ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -431,10 +442,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HackAZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samwang.HackAZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackAZ-Bridging-Header.h";
 			};
 			name = Release;
 		};
