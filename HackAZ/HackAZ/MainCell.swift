@@ -14,7 +14,7 @@ class MainCell: UITableViewCell {
     @IBOutlet weak var course: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var photo: UIImageView!
-    @IBOutlet var content: UITextView!
+    @IBOutlet weak var content: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

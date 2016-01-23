@@ -69,7 +69,7 @@ class TableViewController: UITableViewController {
         //cell.textLabel?.text = currentList[indexPath.item].name
         cell.name.text    = currentList[indexPath.item].name
         cell.course.text  = currentList[indexPath.item].course
-        //cell.content.text = "hey"//currentList[indexPath.item].description
+        cell.content.text = currentList[indexPath.item].description
         return cell
     }
     /*
