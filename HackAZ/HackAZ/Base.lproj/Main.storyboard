@@ -85,7 +85,7 @@
                             <constraint firstItem="8qo-Ha-vZX" firstAttribute="top" secondItem="16x-VA-6CX" secondAttribute="bottom" constant="64" id="PbY-Rg-6Zb"/>
                             <constraint firstItem="C1u-6K-XWk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="53" id="Sku-dP-3zu"/>
                             <constraint firstItem="C1u-6K-XWk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VBa-Jj-f2p"/>
-                            <constraint firstItem="QoF-Rz-D4l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="300" id="XOq-xY-rhh"/>
+                            <constraint firstItem="QoF-Rz-D4l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="275" id="XOq-xY-rhh"/>
                             <constraint firstItem="dvq-7N-k7D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XxR-mF-WTj"/>
                             <constraint firstItem="QoF-Rz-D4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aYz-ed-DWM"/>
                             <constraint firstItem="QoF-Rz-D4l" firstAttribute="top" secondItem="uiM-yJ-yNf" secondAttribute="bottom" constant="8" id="eDv-NN-8Zn"/>
@@ -93,7 +93,7 @@
                             <constraint firstItem="dvq-7N-k7D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="n0H-Q1-EIo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8qo-Ha-vZX" secondAttribute="trailing" constant="40" id="q7N-vn-7hg"/>
                             <constraint firstItem="2d0-YP-NDV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="uCd-p5-zL4"/>
-                            <constraint firstItem="uiM-yJ-yNf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="500" id="zH3-wU-Wzg"/>
+                            <constraint firstItem="uiM-yJ-yNf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="475" id="zH3-wU-Wzg"/>
                         </constraints>
                     </view>
                     <connections>

@@ -45,7 +45,9 @@ class SignUpVC: UIViewController {
         }
         else
         {
-           error.alpha = 1 
+            let AlertView = UIAlertController(title: "Error", message: "Incorrect Username or Password", preferredStyle: UIAlertControllerStyle.Alert)
+            AlertView.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(AlertView, animated: true, completion: nil)
         }
     }
 
